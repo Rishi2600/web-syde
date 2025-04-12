@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import { ReasonSection } from "@/components/ReasonSection";
 import Button from "@/components/ui/Button";
 import WhatweDo from "@/components/WhatweDo";
 
@@ -17,6 +18,7 @@ export default function Home() {
 
       <HeroSection />
       <WhatweDo />
+      <ReasonSection />
 
     </>
   );

@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        container: "1320px",
+      },
       colors: {
             // 🎨 Custom Colors
             // TODO: change this color name later on

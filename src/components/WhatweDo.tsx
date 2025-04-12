@@ -5,7 +5,7 @@ export default function WhatweDo() {
     return (
         <>
             <div className="py-16 relative box-border text-secondary">
-                <div className="my-0 mx-auto box-border py-0 px-20 w-full">
+                <div className="container">
                     <div className="transform-none translate-y-24 transition-all ease-linear ">
                         <h2 className="mb-9 text-base font-normal leading-6">What We Do</h2>
 
