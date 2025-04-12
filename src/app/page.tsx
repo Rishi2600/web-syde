@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Button from "@/components/ui/Button";
+import WhatweDo from "@/components/WhatweDo";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </h1>
 
       <HeroSection />
+      <WhatweDo />
 
     </>
   );
