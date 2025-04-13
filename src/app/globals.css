@@ -31,7 +31,38 @@ body, html {
   @apply max-w-container mx-auto px-24 box-border w-full;
 }
 
+/* fix this into every div  */
+.fadeonscroll_fadeonscroll_active__y4TRl {
+  transform: none;
+  opacity: 1;
+}
+.fadeonscroll_fadeonscroll_bottom__csAQR {
+  transform: translateY(100px);
+  transform-origin: 50% 100%;
+}
+.fadeonscroll_fadeonscroll__rnWOu {
+  opacity: 0;
+  transition: all 1s;
+  transition-behavior: normal;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+}
 
+.row {
+  @apply  flex
+}
+
+/* done  */
+/* .row {
+  margin-left: -45px;
+  margin-right: -45px;
+  display: flex
+;
+  flex-wrap: wrap;
+  flex: auto;
+} */
 
 body {
   color: var(--primary);
