@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SpikeAnimatedLine from "./ui/SpikeAnimatedLine";
 import DashedAnimatedLine from "./ui/DashedAnimatedLine";
+import CurlAnimatedLine from "./ui/CurlAnimatedLine";
 
 
 export default function HeroSection() {
@@ -20,7 +21,7 @@ export default function HeroSection() {
                         </Link>
                         <Link href={"/services/#maintainance"}
                         className="leading-snug mb-8 px-6 text-secondary no-underline duration-500 group">Maintainance.
-                                <DashedAnimatedLine />
+                                <CurlAnimatedLine />
                         </Link>
                     </h1>
                 </div>
