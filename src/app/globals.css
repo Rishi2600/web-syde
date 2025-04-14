@@ -54,6 +54,23 @@ body, html {
   @apply  flex
 }
 
+@keyframes draw-line {
+  0% {
+    stroke-dasharray: 0, 300;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 300, 0;
+    stroke-dashoffset: -600;
+  }
+}
+
+.animate-draw-line {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 0;
+  animation: draw-line 2s linear infinite;
+}
+
 /* done  */
 /* .row {
   margin-left: -45px;
