@@ -19,7 +19,7 @@ export default function WhatweDo() {
                             <div className="flex flex-wrap mx-11">
                                 <p className="mb-4 font-normal py-0 px-11 text-lg">We have been designing, developing, and maintaining apps since 2022.</p>
 
-                                <p className="mb-4 font-normal py-0 px-11 text-lg">Our goal is to create software solutions that match our clients’ needs and expectations. Ronas IT workflow is based on analytics and agile methodology that help us to provide high-quality IT services to small businesses and startups.</p>
+                                <p className="mb-4 font-normal py-0 px-11 text-lg">Our goal is to create software solutions that match our clients’ needs and expectations. Gaurav IT workflow is based on analytics and agile methodology that help us to provide high-quality IT services to small businesses and startups.</p>
                             </div>
                         </div>
 
