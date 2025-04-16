@@ -69,8 +69,8 @@ export default function Services() {
                             <div className="w-2/5 px-11">
                                 <div className="delay-0 opacity-100 transform-none origin-center transition-all duration-1000">
                                     <h2 className="font-medium text-4xl">
-                                        <span className="block text-base -mt-12 mb-9">01</span>
-                                        Design
+                                        <span className="block text-base -mt-12 mb-9">03</span>
+                                        Maintainance
                                     </h2>
                                 </div>
                             </div>

@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import ReasonSection  from "@/components/ReasonSection";
 import Services from "@/components/Services";
 import HomeService from "@/components/ui/HomeService";
+import ProjectBanner from "@/components/ui/ProjectBanner";
 import WhatweDo from "@/components/WhatweDo";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <div className="m-auto flex justify-center align-middle">
           {/* <HomeService title={"Hello"} description={"have something"} image={"/websites-n-platforms.webp"} /> */}
       </div>
+      <ProjectBanner />
 
     </>
   );
