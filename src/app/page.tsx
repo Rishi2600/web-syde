@@ -1,9 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import ReasonSection  from "@/components/ReasonSection";
-import Button from "@/components/ui/Button";
+import Services from "@/components/Services";
 import WhatweDo from "@/components/WhatweDo";
-import Services from "./services/page";
 
 export default function Home() {
   return (
