@@ -4,18 +4,19 @@ interface ServiceComp {
     title: string;
     description: string;
     image: string;
+    link: string;
 }
 
 
 // Make this Component Impressive as well as dynamic!
 
-export default function HomeService({title, description, image}: ServiceComp) {
+export default function HomeService({title, description, image, link}: ServiceComp) {
     return (
         <>
         {/* TODO: HAVE A LOOK AND LET ME KNOW IF ANYTHING WE CAN IMPROVE HERE
         Make the 2nd child or nth child whatever its called should be invisible. */}
-            <div className="px-6 flex flex-col w-3/12 mb-12 relative min-h-80 box-border text-secondary">
-                <Link href={"should-be-dynamic-as-a-prop"}>  
+            <div className="px-6 flex flex-col basis-3/6 mb-12 relative min-h-80 box-border text-secondary">
+                <Link href={link}>  
                 <span className="origin-center duration-1000 opacity-0 hover:opacity-80 ease-out">
                     {/* <img src="/websites-dark.webp" alt="Website image" className="m-auto border-none absolute box-border max-h-full max-w-full object-cover" /> */}
                     <img src={image} alt="Website image" className="m-auto border-none absolute box-border max-h-full max-w-full object-cover" />

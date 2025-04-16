@@ -21,10 +21,8 @@ export default function Home() {
       <WhatweDo />
       <ReasonSection />
       <Services />
-
-      <hr className="text-red-600 bg-red-900" />
       <div className="m-auto flex justify-center align-middle">
-          <HomeService title={"Hello"} description={"have something"} image={"/websites-dark.webp"} />
+          {/* <HomeService title={"Hello"} description={"have something"} image={"/websites-n-platforms.webp"} /> */}
       </div>
 
     </>
