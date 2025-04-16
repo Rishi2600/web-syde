@@ -24,7 +24,7 @@ export default function Home() {
 
       <hr className="text-red-600 bg-red-900" />
       <div className="m-auto flex justify-center align-middle">
-          <HomeService />
+          <HomeService title={"Hello"} description={"have something"} image={"/websites-dark.webp"} />
       </div>
 
     </>
