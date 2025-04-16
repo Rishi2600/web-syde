@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import ReasonSection  from "@/components/ReasonSection";
 import Button from "@/components/ui/Button";
 import WhatweDo from "@/components/WhatweDo";
+import Services from "./services/page";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroSection />
       <WhatweDo />
       <ReasonSection />
+      <Services />
 
     </>
   );
