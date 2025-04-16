@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import ReasonSection  from "@/components/ReasonSection";
 import Services from "@/components/Services";
+import HomeService from "@/components/ui/HomeService";
 import WhatweDo from "@/components/WhatweDo";
 
 export default function Home() {
@@ -20,6 +21,11 @@ export default function Home() {
       <WhatweDo />
       <ReasonSection />
       <Services />
+
+      <hr className="text-red-600 bg-red-900" />
+      <div className="m-auto flex justify-center align-middle">
+          <HomeService />
+      </div>
 
     </>
   );
