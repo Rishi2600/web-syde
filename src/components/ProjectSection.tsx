@@ -1,3 +1,5 @@
+import ScrollItem from "./ScrollItem";
+
 export default function ProjectSection() {
     return (
         <>
@@ -9,11 +11,10 @@ export default function ProjectSection() {
                             <p className="mb-10 leading-normal">As a software development company, we are not only releasing successful projects but also constantly sharing our experience. Take a look at some projects that we have implemented.</p>
                         </div>
                     </div>
-
-                    {/* PROJECT SHOWCASE  */}
-                    <div className="bg-blue-200 w-full mt-10 h-full">HI there</div>
-
                 </div>
+            
+            {/* PROJECT SHOWCASE  */}
+                <ScrollItem />
             </div>
         </>
     )

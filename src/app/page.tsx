@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import ProjectSection from "@/components/ProjectSection";
 import ReasonSection  from "@/components/ReasonSection";
+import ScrollItem from "@/components/ScrollItem";
 import Services from "@/components/Services";
 import HomeService from "@/components/ui/HomeService";
 import ProjectBanner from "@/components/ui/ProjectBanner";
@@ -20,7 +21,7 @@ export default function Home() {
       </div>
       <ProjectBanner />
       <ProjectSection />
-
+      {/* <ScrollItem /> */}
     </>
   );
 }
