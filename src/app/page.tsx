@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import ProjectSection from "@/components/ProjectSection";
 import ReasonSection  from "@/components/ReasonSection";
 import Services from "@/components/Services";
 import HomeService from "@/components/ui/HomeService";
@@ -18,6 +19,7 @@ export default function Home() {
           {/* <HomeService title={"Hello"} description={"have something"} image={"/websites-n-platforms.webp"} /> */}
       </div>
       <ProjectBanner />
+      <ProjectSection />
 
     </>
   );
