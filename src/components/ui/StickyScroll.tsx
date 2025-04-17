@@ -68,13 +68,13 @@ const StickyScroll: React.FC<StickyScrollProps> = ({
                 key={index}
                 className={`absolute transition-all duration-700 ease-in-out w-full ${
                   activeIndex === index
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
+                    ? "opacity-100 translate-y-0 pointer-events-auto"
+                    : "opacity-0 translate-y-10 pointer-events-none"
                 }`}
               >
                 <div className="text-lg mb-5 font-normal leading-6">{item.category}</div>
                 <div className="text-4xl font-medium mb-5 leading-normal">{item.title}</div>
-                <p className="text-lg -mt-4 mb-5 opacity-50 hover:text-accent hover:opacity-100">{item.description}</p>
+                <p className="text-lg -mt-4 mb-5 opacity-50 transition-all ease-in-out duration-300 hover:text-accent hover:opacity-100">{item.description}</p>
                 <div className="py-6">
                   <Button variant="outline">
                     {buttonText}
@@ -90,7 +90,8 @@ const StickyScroll: React.FC<StickyScrollProps> = ({
               <div
                 key={index}
                 className={`absolute inset-0 transition-all duration-700 ease-in-out ${
-                  activeIndex === index ? "opacity-100 z-10" : "opacity-0 z-0"
+                  activeIndex === index ? "opacity-100 z-10 pointer-events-auto" 
+                                        : "opacity-0 z-0 pointer-events-none"
                 }`}
                 style={{
                   backgroundImage: `url(${item.image})`,
