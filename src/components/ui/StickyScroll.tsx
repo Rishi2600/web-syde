@@ -75,7 +75,7 @@ const StickyScroll: React.FC<StickyScrollProps> = ({
                 <div className="text-lg mb-5 font-normal leading-6">{item.category}</div>
                 <div className="text-4xl font-medium mb-5 leading-normal">{item.title}</div>
                 <p className="text-lg -mt-4 mb-5 opacity-50 hover:text-accent hover:opacity-100">{item.description}</p>
-                <div className="">
+                <div className="py-6">
                   <Button variant="outline">
                     {buttonText}
                   </Button>
