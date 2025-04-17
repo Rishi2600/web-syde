@@ -9,7 +9,7 @@ export default function HeroSection() {
         <>
             <div className="relative py-32 my-20 items-center justify-center text-center">
                 <div className="container">
-                    <h1 className=" text-center mb-8 flex px-2 pl-3 font-medium leading-normal text-6xl my-10 tracking-tight text-secondary">
+                    <h1 className="text-center mb-8 flex px-2 pl-3 font-medium leading-normal text-6xl my-10 tracking-tight text-secondary">
                         <Link href={"/services/#design"}
                         className="leading-snug px-7 mb-6 text-secondary no-underline duration-500 group">Design
                                 {/* <SpikeAnimatedLine /> */}
