@@ -1,7 +1,7 @@
 export default function PageTitle() {
     return (
         <>
-            <div className="flex flex-col justify-center pt-24 pb-12 text-secondary">
+            <div className="flex flex-col justify-center pt-32 pb-8 text-secondary">
                 <div className="container">
                     <h1 className="text-lg mb-4 font-normal leading-normal">Projects
                     </h1>
