@@ -5,6 +5,7 @@ import ProjectSection from "@/components/ProjectSection";
 import ReasonSection  from "@/components/ReasonSection";
 import ScrollItem from "@/components/ScrollItem";
 import Services from "@/components/Services";
+import FAQ from "@/components/ui/Faq";
 import HomeService from "@/components/ui/HomeService";
 import ProjectBanner from "@/components/ui/ProjectBanner";
 import WhatweDo from "@/components/WhatweDo";
@@ -23,6 +24,7 @@ export default function Home() {
       <ProjectBanner />
       <ProjectSection />
       {/* <ScrollItem /> */}
+      <FAQ />
       <Footer />
     </>
   );
