@@ -11,7 +11,7 @@ export default function Logo() {
       transition={{ duration: 0.5 }}
     >
       <Link href="/" className="text-2xl font-bold tracking-tight text-accent">
-        Web<span className="text-secondary">Syde</span>
+        G<span className="text-secondary">Web</span>
       </Link>
     </motion.div>
   );
