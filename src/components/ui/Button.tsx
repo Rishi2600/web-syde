@@ -8,6 +8,7 @@ interface ButtonProps {
     children: React.ReactNode;
     variant?: 'solid' | 'outline';
     className?: string;
+    onClick?: () => void
 }
 
 
@@ -15,6 +16,7 @@ export default function Button({
     children,
     variant = 'solid',
     className = "",
+    onClick
   }: ButtonProps) {
 
     const ref = useRef<HTMLButtonElement>(null);
@@ -65,6 +67,7 @@ export default function Button({
                     'bg-secondary py-4 px-6 text-primary border'
                   : 'bg-transparent py-4 px-11 text-secondary outline-none '
                 }`}
+                onClick={onClick}
             >
                 <span
                 className="absolute inset-0 z-0 transition-all duration-700 ease-out scale-0 group-hover:scale-[4] opacity-0 group-hover:opacity-100 rounded-3xl bg-accent origin-[var(--mouse-x)_var(--mouse-y)]"
