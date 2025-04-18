@@ -20,8 +20,9 @@ export default function Footer() {
 
                         {/* 1 more div here  */}
 
-                        <div className="mt-24 mb-28 leading-normal">
-                            <div className="-mx-3 flex flex-wrap">
+                        <div className="mt-16 mb-16 leading-normal">
+
+                            <div className="-mx-3 flex flex-wrap justify-between w-8/12">
 
                                 <div className="px-3 col-[25%] box-border flex flex-col">
                                     <strong className="text-base block mb-3 font-medium">Call</strong>
@@ -53,7 +54,30 @@ export default function Footer() {
                             </div>
                         </div>
 
+
                         {/* 1 More div here- Social */}
+
+                        <div className=" flex flex-wrap text-sm justify-between mt-8 opacity-50">
+                            <div className="relative">
+                                © 2025 &nbsp;
+                                <Link href={"#"} className="transition-all duration-500 decoration-[0.5px] underline underline-offset-4  hover:text-accent mb-2">
+                                    Gaurav IT — Software Development Company.
+                                </Link>
+                                    <br />
+                                    All rights reserved.
+
+
+                            </div>
+
+                            <div className="relative">
+                                    <Link href={"#"} className="transition-all duration-500 decoration-[0.5px] underline underline-offset-4 mx-6 hover:text-accent mb-2">
+                                    Public Offer Agreement
+                                    </Link>
+                                    <Link href={"#"} className="transition-all duration-500 decoration-[0.5px] underline underline-offset-4  hover:text-accent mb-2">
+                                    Privacy Policy
+                                    </Link>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
