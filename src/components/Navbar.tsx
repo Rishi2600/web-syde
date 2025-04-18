@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "./ui/Logo";
 import Button from "./ui/Button";
@@ -13,6 +13,7 @@ import MobileDrawer from "./ui/MobileDrawer";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleDrawer = () => setDrawerOpen((prev) => !prev);
 
@@ -24,8 +25,20 @@ export default function Navbar() {
     { name: "Blog", href: "/blog" },
   ];
 
+    // Handle scroll effect
+    useEffect(() => {
+      const handleScroll = () => {
+        setIsScrolled(window.scrollY > 10);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
   return (
-    <header className="fixed top-0 w-full z-50  bg-primary px-6 py-4 border-b-[1px] border-secondary border-opacity-30">
+    <header className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
+      isScrolled ? "bg-primary/50 backdrop-blur-md border-b border-secondary border-opacity-30" : "bg-primary"
+    } px-6 py-4`}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Logo />
