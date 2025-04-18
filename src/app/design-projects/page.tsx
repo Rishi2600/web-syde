@@ -18,8 +18,12 @@ export default function DesignProjects() {
 
     return (
         <>
-            <Navbar />
-            <PageTitle />
+            {/* <Navbar /> */}
+            <PageTitle title={"Projects"} subtitle={[
+                   "Take a look at some of the ideas",
+                    "we’ve helped to implement", 
+                    "Will yours be next?"
+            ]} />
 
             {/* PageITEMS: TODO: DYNAMIC */}
             <div className="block pb-20">
@@ -40,7 +44,7 @@ export default function DesignProjects() {
             <div className="mt-7 text-center">
                 <Button onClick={handleShowMore} children={"Show More"} variant={"outline"} />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

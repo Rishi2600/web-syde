@@ -13,7 +13,7 @@ import WhatweDo from "@/components/WhatweDo";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <WhatweDo />
       <ReasonSection />
@@ -25,7 +25,7 @@ export default function Home() {
       <ProjectSection />
       {/* <ScrollItem /> */}
       <FAQ />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
