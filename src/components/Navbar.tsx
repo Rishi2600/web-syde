@@ -25,7 +25,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-primary px-6 py-4 shadow-sm">
+    <header className="fixed top-0 w-full z-50  bg-primary px-6 py-4 border-b-[1px] border-secondary border-opacity-30">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Logo />
@@ -36,7 +36,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-base font-semibold text-primary dark:text-white hover:text-accent transition-colors duration-300"
+                className="text-base font-medium text-primary dark:text-white hover:text-accent transition-colors duration-300"
             >
               {link.name}
             </Link>
@@ -44,11 +44,15 @@ export default function Navbar() {
           <Button variant="solid" className="ml-4">
             Get in Touch
           </Button>
+
         </nav>
 
 {/* TODO: TOMM TASK:  */}
         {/* Mobile Menu */}
-        <div className="md:hidden">
+        <div className="md:hidden flex">
+          <div className="mr-12">
+          <Button>Get In Touch</Button>
+          </div>
           <Hamburger isOpen={drawerOpen} toggle={toggleDrawer} />
         </div>
 
