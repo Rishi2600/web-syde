@@ -35,6 +35,7 @@ export default function Blog() {
                     <div className="box-border col-full px-11 flex">
                         <h4 className="mb-6 flex justify-between items-center text-4xl font-semibold leading-10">
                             <span>Featured Articles</span>
+                            {/* TODO: LIGHT BULB IMAGE  */}
                             {/* <span></span> */}
                         </h4>
                     </div>
