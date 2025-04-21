@@ -6,6 +6,7 @@ import Logo from "./ui/Logo";
 import Button from "./ui/Button";
 import Hamburger from "./ui/Hamburger";
 import MobileDrawer from "./ui/MobileDrawer";
+import { ThemeSwitch } from "./ui/ThemeSwitch";
 // import Logo from "./Logo";
 // import Button from "./Button";
 // import Hamburger from "./Hamburger";
@@ -54,6 +55,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
+          <ThemeSwitch />
           <Button variant="solid" className="ml-4">
             Get in Touch
           </Button>
