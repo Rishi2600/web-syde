@@ -32,7 +32,7 @@ export default function MobileDrawer({
           transition={{ type: 'spring', stiffness: 200, damping: 40 }}
           className="fixed top-0 right-0 h-full w-[100%] sm:w-[100%] bg-primary text-secondary z-40 p-6 flex flex-col flex-wrap justify-between text-4xl"
         >
-          <div className='-mx-4'>
+          <div className='-mx-4 bg-primary'>
                           {/* Navigation */}
               <div className="px-4 text-4xl">
                 <h2 className="text-2xl font-medium tracking-wide text-secondary mb-6 opacity-60">Menu</h2>

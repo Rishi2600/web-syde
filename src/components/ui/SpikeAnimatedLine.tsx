@@ -1,5 +1,7 @@
 // components/SpikeAnimatedLine.tsx
+import Image from "next/image";
 import React from "react";
+
 
 
 const SpikeAnimatedLine = () => {
@@ -11,6 +13,7 @@ const SpikeAnimatedLine = () => {
         className="relative -mt-2 w-full left-0  h-3 stroke-secondary animate-none group-hover:animate-draw-line"
       />
     </span>
+
   );
 };
 

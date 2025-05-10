@@ -3,29 +3,36 @@ import SpikeAnimatedLine from "./ui/SpikeAnimatedLine";
 import DashedAnimatedLine from "./ui/DashedAnimatedLine";
 import CurlAnimatedLine from "./ui/CurlAnimatedLine";
 
-
 export default function HeroSection() {
     return (
-        <>
-            <div className="relative py-32 my-20 items-center justify-center text-center">
-                <div className="container">
-                    <h1 className="text-center mb-8 flex px-2 pl-3 font-medium leading-normal text-6xl my-10 tracking-tight text-secondary">
-                        <Link href={"/services/#design"}
-                        className="leading-snug px-7 mb-6 text-secondary no-underline duration-500 group">Design
-                                {/* <SpikeAnimatedLine /> */}
-                                <SpikeAnimatedLine />
-                        </Link>
-                        <Link href={"/services/#development"}
-                        className="leading-snug mb-8 px-8 text-secondary no-underline duration-500 group">Development
-                                <DashedAnimatedLine />
-                        </Link>
-                        <Link href={"/services/#maintainance"}
-                        className="leading-snug mb-8 px-6 text-secondary no-underline duration-500 group">Maintainance.
-                                <CurlAnimatedLine />
-                        </Link>
-                    </h1>
-                </div>
+        <div className="relative py-20 md:py-32 my-10 md:my-20 flex items-center justify-center text-center">
+            <div className="container">
+                <h1 className="flex flex-wrap justify-center gap-4 px-4 font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight text-secondary text-center">
+                    <Link
+                        href="/services/#design"
+                        className="relative px-4 sm:px-6 text-secondary no-underline duration-500 group"
+                    >
+                        Design
+                        <SpikeAnimatedLine />
+                    </Link>
+
+                    <Link
+                        href="/services/#development"
+                        className="relative px-4 sm:px-6 text-secondary no-underline duration-500 group"
+                    >
+                        Development
+                        <DashedAnimatedLine />
+                    </Link>
+
+                    <Link
+                        href="/services/#maintainance"
+                        className="relative px-4 sm:px-6 text-secondary no-underline duration-500 group"
+                    >
+                        Maintainance.
+                        <CurlAnimatedLine />
+                    </Link>
+                </h1>
             </div>
-        </>
-    )
+        </div>
+    );
 }
