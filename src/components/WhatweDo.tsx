@@ -26,7 +26,7 @@ export default function WhatweDo() {
 
                         <span className="inline-block mt-4">
                             <Button variant={"outline"}>
-                                View More
+                                View More...
                             </Button>
                         </span>
 
