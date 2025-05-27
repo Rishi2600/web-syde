@@ -11,10 +11,23 @@ import { ThemeSwitch } from "./ui/ThemeSwitch";
 // import Button from "./Button";
 // import Hamburger from "./Hamburger";
 // import MobileDrawer from "./MobileDrawer";
+// import { Sun, Moon } from "lucide-react";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    // Check if dark mode is enabled on mount
+    const isDarkMode = document.documentElement.classList.contains("dark");
+    setIsDark(isDarkMode);
+  }, []);
+
+  const toggleDarkMode = () => {
+    setIsDark(!isDark);
+    document.documentElement.classList.toggle("dark");
+  };
 
   const toggleDrawer = () => setDrawerOpen((prev) => !prev);
 
@@ -56,13 +69,29 @@ export default function Navbar() {
             </Link>
           ))}
           <ThemeSwitch />
+
+          {/* Dark Mode Toggle */}
+          {/* <Button
+            variant="ghost"
+            //@ts-ignore
+            size="icon"
+            onClick={toggleDarkMode}
+            className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
+          >
+            {isDark ? (
+              <Sun className="h-5 w-5" />
+            ) : (
+              <Moon className="h-5 w-5" />
+            )}
+          </Button> */}
+
           <Button variant="solid" className="ml-4">
             Get in Touch
           </Button>
 
         </nav>
 
-{/* TODO: TOMM TASK:  */}
+  {/* TODO: TOMM TASK:  */}
         {/* Mobile Menu */}
         <div className="md:hidden flex">
           <div className="mr-12">
