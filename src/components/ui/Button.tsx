@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 
 interface ButtonProps {
     children: React.ReactNode;
-    variant?: 'solid' | 'outline';
+    variant?: 'solid' | 'outline' | 'ghost';
     className?: string;
     onClick?: () => void
 }

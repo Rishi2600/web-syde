@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-// import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import ProjectSection from "@/components/ProjectSection";
 import ReasonSection  from "@/components/ReasonSection";
 import ScrollItem from "@/components/ScrollItem";
@@ -13,7 +13,7 @@ import WhatweDo from "@/components/WhatweDo";
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <HeroSection />
       <WhatweDo />
       <ReasonSection />
